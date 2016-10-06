@@ -1,0 +1,11 @@
+package ch15.labs;
+
+public class Search {
+	
+	private String who = "Manager";
+	
+	String fileName = "employee.txt";
+
+	
+
+}

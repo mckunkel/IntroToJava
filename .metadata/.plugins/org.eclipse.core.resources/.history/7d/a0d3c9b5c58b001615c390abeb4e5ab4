@@ -1,0 +1,19 @@
+package ch15.labs;
+
+public class Order {
+
+	private int id;
+	private String name;
+
+	public Order(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public static void main(String[] args) {
+		
+		Order order = new Order(27, "Charlie");
+		
+	}
+
+}

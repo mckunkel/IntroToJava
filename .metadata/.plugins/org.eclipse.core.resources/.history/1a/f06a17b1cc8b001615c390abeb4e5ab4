@@ -1,0 +1,26 @@
+package ch15.labs;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class Search {
+
+	public static void main(String[] args) {
+		String who = "Manager";
+
+		String fileName = "employee.txt";
+
+		try (BufferedReader buf = new BufferedReader(fileName);) {
+
+			String line;
+			while ((line = buf.readLine()) != null) {
+				if (line.indexOf(who) >= 0) {
+					System.out.println(line);
+				}
+			}
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
+	}
+
+}

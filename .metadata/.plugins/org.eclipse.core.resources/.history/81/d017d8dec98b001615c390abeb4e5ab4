@@ -1,0 +1,25 @@
+package ch15.labs;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class TestOrder {
+	public static void main(String[] args) {
+
+		Order order = new Order(27, "Charlie");
+		try (FileWriter fw = new FileWriter("test.txt"); PrintWriter pw = new PrintWriter(fw);) {
+
+			pw.println(order.getId());
+			pw.printf(order.getName());
+
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
+		
+		// ObjectOutputStream out = new ObjectOutputStream(pw);
+		// out.writeObject(order);
+		// out.close();
+
+	}
+}

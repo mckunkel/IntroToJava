@@ -1,0 +1,42 @@
+package ch15.labs;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Search {
+
+	public static void main(String[] args) {
+		String who = "manager";
+
+		try (BufferedReader buf = new BufferedReader(new FileReader("employee.txt"))) {
+			String line;
+			while ((line = buf.readLine()) != null) {
+				if (line.indexOf(who) >= 0) {
+					System.out.println(line);
+				}
+			}
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
+		try (BufferedReader buf = new BufferedReader(new FileReader("employee.txt"))) {
+			InputStreamReader conv = new InputStreamReader(System.in);
+			BufferedReader bufIn = new BufferedReader(conv);
+
+			String searchCriteria;
+			System.out.print("What are you looking for? ");
+			searchCriteria = bufIn.readLine();
+			String line;
+			while ((line = buf.readLine()) != null) {
+				if (line.indexOf(searchCriteria) >= 0) {
+					System.out.println(line);
+				}
+			}
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
+
+	}
+
+}
