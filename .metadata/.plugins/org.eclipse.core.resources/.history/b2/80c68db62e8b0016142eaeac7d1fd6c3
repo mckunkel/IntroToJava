@@ -1,0 +1,9 @@
+package ch14.labs;
+
+public class BadAgeException {
+
+	public BadAgeException() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,18 @@
+package ch12.labs;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Shape[] shapes = new Shape[3];
+		shapes[0] = new Rectangle(10.0, 10.0);
+		shapes[1] = new Rectangle(11.0, 21.0);
+		shapes[2] = new Rectangle(10.0, 20.0);
+
+		for (Shape shape : shapes) {
+			System.out.println("The area is : " + shape.getArea());
+			shape.draw();
+		}
+
+	}
+
+}

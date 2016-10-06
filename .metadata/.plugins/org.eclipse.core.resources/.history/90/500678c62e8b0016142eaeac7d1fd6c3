@@ -1,0 +1,9 @@
+package ch14.labs;
+
+public class BadAgeException extends Exception {
+
+    public String getMessage() {
+        return "Name must be provided.";
+    }
+
+}

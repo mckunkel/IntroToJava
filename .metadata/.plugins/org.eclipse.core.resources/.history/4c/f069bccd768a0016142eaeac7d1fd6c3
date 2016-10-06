@@ -1,0 +1,27 @@
+package ch12.labs;
+
+public class Circle extends Shape {
+
+	private double radius;
+	
+	public Circle() {
+		this(0.0, 0.0, Color.VIOLET, 0.0);
+	}
+
+	public Circle(double xCoordinate, double yCoordinate, , double radius) {
+		super(xCoordinate, yCoordinate);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Circle(double xCoordinate, double yCoordinate, Color color, double radius) {
+		super(xCoordinate, yCoordinate, color);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,6 @@
+package ch12.labs;
+
+public abstract class Shape {
+
+	private 
+}

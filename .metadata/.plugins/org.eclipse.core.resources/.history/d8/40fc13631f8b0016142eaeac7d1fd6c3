@@ -1,0 +1,9 @@
+package ch14.labs;
+
+public class ParseTest {
+
+	public ParseTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

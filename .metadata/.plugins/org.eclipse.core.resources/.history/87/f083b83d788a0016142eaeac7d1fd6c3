@@ -1,0 +1,9 @@
+package ch12.labs;
+
+public class Tester {
+
+	public Tester() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

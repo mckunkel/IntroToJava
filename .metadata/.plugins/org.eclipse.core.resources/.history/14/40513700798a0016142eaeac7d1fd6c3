@@ -1,0 +1,6 @@
+package ch12.labs;
+
+public interface Drawable {
+	public void draw();
+
+}

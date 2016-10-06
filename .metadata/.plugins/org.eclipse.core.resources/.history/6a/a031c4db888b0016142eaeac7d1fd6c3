@@ -1,0 +1,19 @@
+package ch14.labs;
+
+import com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeFacetException;
+
+public class Person {
+	private String name;
+	private int age;
+
+	public Person(String n, int a) throws InvalidDataException, BadAgeException {
+		if (n == null || n.equals("")) {
+			throw new InvalidDataException();
+		}
+		name = n;
+	}
+
+	public String toString() {
+		return "Person [name=" + name + "]";
+	}
+}

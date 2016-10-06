@@ -1,0 +1,20 @@
+package ch12.labs;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Shape[] shapes = new Shape[3];
+		shapes[0] = new Rectangle(10.0, 10.0);
+		shapes[1] = new Rectangle(1., 2., Color.VIOLET, 12, 13);
+		shapes[2] = new Circle(12., 11, Color.YELLOW, 12);
+
+		for (Shape shape : shapes) {
+			System.out.println("The area is : " + shape.getArea());
+			System.out.println(shape.draw());
+		}
+
+		Drawable[] draws = new Drawable[3];
+
+	}
+
+}
